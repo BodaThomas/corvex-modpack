@@ -1,0 +1,156 @@
+{
+	id: "0000000000000010"
+	group: ""
+	order_index: 0
+	filename: "premiers_pas"
+	title: "Chapitre 1 — Premiers pas"
+	icon: "minecraft:red_bed"
+	subtitle: ["&7Avant l'aventure, le commencement."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "Pose ton premier lit"
+			description: [
+				"&7Avant d'affronter le monde, fais-toi une place où dormir."
+				"&7Le repos est la première arme de l'aventurier."
+				""
+				"&6Pose un lit n'importe où."
+			]
+			id: "0000000000000011"
+			tasks: [{
+				id: "0000000000000012"
+				type: "item"
+				item: "minecraft:red_bed"
+				consume_items: false
+				match_nbt: false
+				weak_nbt_match: false
+			}]
+			rewards: [{
+				id: "0000000000000013"
+				type: "item"
+				item: { id: "waystones:waystone", Count: 1b }
+			}]
+			title: "Le foyer"
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "Crafte un sac à dos"
+			description: [
+				"&7Tes poches sont pleines, et ce n'est que le début."
+				"&7Il est temps de t'équiper d'un vrai sac de voyageur."
+				""
+				"&6Crafte un Sophisticated Backpack."
+			]
+			dependencies: ["0000000000000011"]
+			id: "0000000000000014"
+			tasks: [{
+				id: "0000000000000015"
+				type: "item"
+				item: "sophisticatedbackpacks:backpack"
+				consume_items: false
+			}]
+			rewards: [{
+				id: "0000000000000016"
+				type: "item"
+				item: { id: "sophisticatedbackpacks:upgrade_base", Count: 1b }
+			}]
+			title: "Le sac du voyageur"
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Découvre la carte du monde"
+			description: [
+				"&7Un aventurier sans carte n'est qu'un perdu qui marche."
+				"&7Ouvre Xaero's World Map (touche M) au moins une fois."
+				""
+				"&6Explore au moins 100 chunks."
+			]
+			dependencies: ["0000000000000011"]
+			id: "0000000000000017"
+			tasks: [{
+				id: "0000000000000018"
+				type: "stat"
+				stat: "minecraft:walk_one_cm"
+				value: 50000
+			}]
+			rewards: [{
+				id: "0000000000000019"
+				type: "xp"
+				xp: 50
+			}]
+			title: "La carte du monde"
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			subtitle: "Cuisine ton premier plat"
+			description: [
+				"&7Manger des steaks crus, c'est bon pour les zombies."
+				"&7Les vrais aventuriers mangent du fait maison."
+				""
+				"&6Crafte n'importe quel plat de Farmer's Delight."
+			]
+			dependencies: ["0000000000000014"]
+			id: "000000000000001a"
+			tasks: [{
+				id: "000000000000001b"
+				type: "item"
+				item: { id: "farmersdelight:cooking_pot", Count: 1b }
+				consume_items: false
+			}]
+			rewards: [{
+				id: "000000000000001c"
+				type: "item"
+				item: { id: "farmersdelight:cooking_pot", Count: 1b }
+			}]
+			title: "Le premier repas"
+		}
+		{
+			x: 3.0d
+			y: 0.75d
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Quête serveur — Le Grand Hub"
+			description: [
+				"&6&l[ Quête Serveur ]"
+				""
+				"&7Tous les Corvex doivent fonder leur foyer près du spawn."
+				"&7Ensemble, vous bâtirez un point de ralliement."
+				""
+				"&6Tous les joueurs ont posé un lit ET une waystone"
+				"&6dans un rayon de 200 blocs du spawn."
+				""
+				"&8(À valider manuellement par l'admin via /ftbquests)"
+			]
+			dependencies: ["0000000000000014", "000000000000001a", "0000000000000017"]
+			id: "000000000000001d"
+			tasks: [{
+				id: "000000000000001e"
+				type: "checkmark"
+				title: "Le Grand Hub est fondé"
+			}]
+			rewards: [
+				{
+					id: "000000000000001f"
+					type: "command"
+					command: "/say §6Le Grand Hub Corvex est fondé ! §7La commande /spawn est désormais disponible."
+					player_command: false
+				}
+				{
+					id: "0000000000000020"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			title: "Le Grand Hub"
+		}
+	]
+	quest_links: [ ]
+}

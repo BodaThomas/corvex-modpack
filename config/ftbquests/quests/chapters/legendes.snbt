@@ -1,0 +1,203 @@
+{
+	id: "00000000000000a0"
+	group: ""
+	order_index: 4
+	filename: "legendes"
+	title: "Chapitre 5 — Légendes"
+	icon: "minecraft:nether_star"
+	subtitle: ["&7Ce qu'on raconte au coin du feu, dans 100 ans."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Tue le Wither"
+			description: [
+				"&7Trois têtes. Une mort à chacune."
+				"&7Faites-le ensemble. Personne ne survit seul."
+				""
+				"&6Tue le Wither (de préférence en groupe)."
+			]
+			id: "00000000000000a1"
+			tasks: [{
+				id: "00000000000000a2"
+				type: "advancement"
+				advancement: "minecraft:nether/summon_wither"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "00000000000000a3"
+				type: "item"
+				item: { id: "minecraft:nether_star", Count: 1b }
+			}]
+			title: "Le Wither"
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "Tue l'Ender Dragon"
+			description: [
+				"&7Le boss originel. Le toit du jeu."
+				"&7Que celui qui frappera le coup final s'en souvienne."
+				""
+				"&6Tue le Dragon de l'End."
+			]
+			dependencies: ["00000000000000a1"]
+			id: "00000000000000a4"
+			tasks: [{
+				id: "00000000000000a5"
+				type: "advancement"
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "00000000000000a6"
+				type: "item"
+				item: { id: "minecraft:dragon_egg", Count: 1b }
+			}]
+			title: "L'Ender Dragon"
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			subtitle: "Pêche 100 poissons"
+			description: [
+				"&7La pêche, c'est pour les patients."
+				"&7Et les patients vivent vieux."
+				""
+				"&6Pêche 100 poissons."
+			]
+			id: "00000000000000a7"
+			tasks: [{
+				id: "00000000000000a8"
+				type: "stat"
+				stat: "minecraft:fish_caught"
+				value: 100
+			}]
+			rewards: [{
+				id: "00000000000000a9"
+				type: "item"
+				item: { id: "minecraft:fishing_rod", Count: 1b, tag: { Enchantments: [{id: "minecraft:luck_of_the_sea", lvl: 3s}, {id: "minecraft:unbreaking", lvl: 3s}], RepairCost: 0 } }
+			}]
+			title: "Pêcheur émérite"
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Mine 1000 blocs profonds"
+			description: [
+				"&7Le mineur de fond connaît les pierres mieux que ses doigts."
+				""
+				"&6Mine 1000 blocs de deepslate."
+			]
+			id: "00000000000000aa"
+			tasks: [{
+				id: "00000000000000ab"
+				type: "stat"
+				stat: "minecraft:mine_block"
+				stat_block: "minecraft:deepslate"
+				value: 1000
+			}]
+			rewards: [{
+				id: "00000000000000ac"
+				type: "item"
+				item: { id: "minecraft:enchanted_book", Count: 1b, tag: { StoredEnchantments: [{id: "minecraft:efficiency", lvl: 5s}] } }
+			}]
+			title: "Mineur de fond"
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			subtitle: "Collectionne tous les métaux et gemmes"
+			description: [
+				"&7Une vie d'aventurier se mesure à ce qu'il a vu."
+				"&7Et ramené."
+				""
+				"&6Possède dans un même coffre :"
+				"&7- 1 lingot de chaque métal (fer, or, cuivre, netherite)"
+				"&7- 1 de chaque gemme (diamant, émeraude, améthyste, lapis)"
+				"&7- 1 œuf de spawn Alex's Mobs"
+				""
+				"&8(À valider manuellement par l'admin)"
+			]
+			dependencies: ["00000000000000aa"]
+			id: "00000000000000ad"
+			tasks: [{
+				id: "00000000000000ae"
+				type: "checkmark"
+				title: "Le trésor des archivistes"
+			}]
+			rewards: [
+				{
+					id: "00000000000000af"
+					type: "command"
+					command: "/say §6{player} a obtenu le titre §e&l\"L'Archiviste\""
+					player_command: false
+				}
+				{
+					id: "00000000000000b0"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			title: "Archi-collectionneur"
+		}
+		{
+			x: 4.5d
+			y: 0.75d
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Quête FINALE — Le Monument"
+			description: [
+				"&6&l[ Quête Serveur — Finale Saison 1 ]"
+				""
+				"&7Tout commence par un foyer."
+				"&7Tout finit par une légende."
+				""
+				"&6Construisez collectivement un monument :"
+				"&7- 500+ blocs"
+				"&7- dans un rayon de 30 blocs"
+				"&7- contient 1 waystone + 1 pierre mémorial"
+				""
+				"&aDÉBLOQUE : Saison 2 (nouveaux mods, nouveau chapitre)"
+				""
+				"&8(À valider manuellement par l'admin)"
+			]
+			dependencies: ["00000000000000a4", "00000000000000ad", "00000000000000a7"]
+			id: "00000000000000b1"
+			tasks: [{
+				id: "00000000000000b2"
+				type: "checkmark"
+				title: "Le Monument est dressé"
+			}]
+			rewards: [
+				{
+					id: "00000000000000b3"
+					type: "command"
+					command: "/say §6§lLA SAISON 1 EST TERMINÉE. §7§oLes Corvex sont devenus une légende."
+					player_command: false
+				}
+				{
+					id: "00000000000000b4"
+					type: "command"
+					command: "/say §6Préparez-vous. La Saison 2 approche..."
+					player_command: false
+				}
+				{
+					id: "00000000000000b5"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					id: "00000000000000b6"
+					type: "item"
+					item: { id: "minecraft:netherite_ingot", Count: 4b }
+				}
+			]
+			title: "Le Monument"
+		}
+	]
+	quest_links: [ ]
+}

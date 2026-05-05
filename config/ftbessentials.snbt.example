@@ -1,0 +1,35 @@
+# FTB Essentials — config serveur
+# Active les commandes QoL standard.
+# Cooldowns raisonnables pour éviter les abus, assez courts pour rester fun.
+
+[home]
+  enabled = true
+  # 3 homes par joueur : base, mine, zone d'aventure
+  max_homes = 3
+  cooldown_seconds = 30
+  warmup_seconds = 3
+
+[back]
+  enabled = true
+  cooldown_seconds = 60
+  # /back après la mort très pratique (complète Corail Tombstone)
+  back_on_death = true
+
+[tpa]
+  enabled = true
+  cooldown_seconds = 30
+  warmup_seconds = 5
+  timeout_seconds = 60
+
+[spawn]
+  enabled = true
+  cooldown_seconds = 60
+
+[rtp]
+  # Random teleport — utile au début pour s'éparpiller
+  enabled = true
+  cooldown_seconds = 300
+  min_distance = 500
+  max_distance = 5000
+  # Dimension override : overworld seulement
+  dimensions = ["minecraft:overworld"]

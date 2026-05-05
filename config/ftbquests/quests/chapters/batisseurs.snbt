@@ -1,0 +1,194 @@
+{
+	id: "0000000000000050"
+	group: ""
+	order_index: 2
+	filename: "batisseurs"
+	title: "Chapitre 3 — Bâtisseurs"
+	icon: "minecraft:oak_planks"
+	subtitle: ["&7Un foyer, ce n'est pas un cube. C'est une maison."]
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Construis ta première vraie base"
+			description: [
+				"&7Quatre murs et un toit. C'est le minimum."
+				"&7Mais pour devenir chez soi, il faut plus."
+				""
+				"&6Pose au moins 50 blocs de construction,"
+				"&6un lit, une crafting table et un coffre."
+			]
+			id: "0000000000000051"
+			tasks: [
+				{
+					id: "0000000000000052"
+					type: "stat"
+					stat: "minecraft:use_oak_planks"
+					value: 50
+					title: "Pose 50 blocs (oak_planks)"
+				}
+				{
+					id: "0000000000000053"
+					type: "item"
+					item: "minecraft:crafting_table"
+					consume_items: false
+				}
+				{
+					id: "0000000000000054"
+					type: "item"
+					item: "minecraft:chest"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "0000000000000055"
+				type: "item"
+				item: { id: "supplementaries:lantern", Count: 4b }
+			}]
+			title: "Chez soi"
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "Décore avec des blocs Supplementaries"
+			description: [
+				"&7Un foyer, c'est dans les détails."
+				"&7Des panneaux, des lanternes, une boîte aux lettres."
+				""
+				"&6Pose 10 blocs décoratifs Supplementaries."
+			]
+			dependencies: ["0000000000000051"]
+			id: "0000000000000056"
+			tasks: [{
+				id: "0000000000000057"
+				type: "item"
+				item: { id: "supplementaries:globe", Count: 1b }
+				consume_items: false
+				title: "Possède un globe Supplementaries"
+			}]
+			rewards: [{
+				id: "0000000000000058"
+				type: "item"
+				item: { id: "supplementaries:safe", Count: 1b }
+			}]
+			title: "Le décorateur"
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Récolte 5 cultures différentes"
+			description: [
+				"&7Le sol nourrit ceux qui le travaillent."
+				"&7Tomates, oignons, riz, choux... pose, arrose, attends."
+				""
+				"&6Récolte 5 types différents de Farmer's Delight."
+			]
+			id: "0000000000000059"
+			tasks: [{
+				id: "000000000000005a"
+				type: "item"
+				item: { id: "farmersdelight:tomato", Count: 5b }
+				consume_items: false
+				title: "5 tomates ou autre culture"
+			}]
+			rewards: [{
+				id: "000000000000005b"
+				type: "item"
+				item: { id: "farmersdelight:iron_knife", Count: 1b }
+			}]
+			title: "Jardinier"
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			subtitle: "Forge un set d'armure en fer"
+			description: [
+				"&7Le cuir, c'est pour les peureux."
+				"&7Le fer, c'est pour ceux qui se respectent."
+				""
+				"&6Crafte un set complet d'armure en fer (4 pièces)."
+			]
+			dependencies: ["0000000000000051"]
+			id: "000000000000005c"
+			tasks: [
+				{
+					id: "000000000000005d"
+					type: "item"
+					item: "minecraft:iron_helmet"
+					consume_items: false
+				}
+				{
+					id: "000000000000005e"
+					type: "item"
+					item: "minecraft:iron_chestplate"
+					consume_items: false
+				}
+				{
+					id: "000000000000005f"
+					type: "item"
+					item: "minecraft:iron_leggings"
+					consume_items: false
+				}
+				{
+					id: "0000000000000060"
+					type: "item"
+					item: "minecraft:iron_boots"
+					consume_items: false
+				}
+			]
+			rewards: [{
+				id: "0000000000000061"
+				type: "item"
+				item: { id: "minecraft:enchanted_book", Count: 1b, tag: { StoredEnchantments: [{id: "minecraft:protection", lvl: 2s}] } }
+			}]
+			title: "Le poids des armes"
+		}
+		{
+			x: 3.0d
+			y: 0.75d
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Quête serveur — Le village"
+			description: [
+				"&6&l[ Quête Serveur ]"
+				""
+				"&7Pas une base. Un village."
+				"&7Un lieu commun, vivant, où chacun apporte sa pierre."
+				""
+				"&6Construisez collectivement, dans un rayon de 100 blocs :"
+				"&7- une taverne"
+				"&7- une bibliothèque"
+				"&7- une tour de garde"
+				""
+				"&aDÉBLOQUE : marchand custom au spawn"
+				""
+				"&8(À valider manuellement par l'admin)"
+			]
+			dependencies: ["0000000000000056", "0000000000000059", "000000000000005c"]
+			id: "0000000000000062"
+			tasks: [{
+				id: "0000000000000063"
+				type: "checkmark"
+				title: "Le village est fondé"
+			}]
+			rewards: [
+				{
+					id: "0000000000000064"
+					type: "command"
+					command: "/say §6Le village des Corvex est fondé ! §7Un marchand mystérieux est apparu près du spawn..."
+					player_command: false
+				}
+				{
+					id: "0000000000000065"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			title: "Le village"
+		}
+	]
+	quest_links: [ ]
+}

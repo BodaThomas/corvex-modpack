@@ -1,0 +1,13 @@
+name = "Corvex Friends"
+author = "bodathomas"
+version = "0.1.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "9ead990bdb0a44ae9c8a6c2fc3c1539b57fbf19599d6eca0f6e3de0248aa5f06"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.228"

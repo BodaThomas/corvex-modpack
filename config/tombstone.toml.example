@@ -1,0 +1,20 @@
+# Corail Tombstone — config casual
+# Tombes accessibles uniquement par leur propriétaire, timer confortable.
+
+[general]
+  # Compatibilité gravestone
+  handle_backpacks = true
+  handle_curios = true
+
+[owner_protection]
+  # Seul le propriétaire peut looter (+5 min pour les potes en mode aide)
+  access_other_graves_timer = 300
+  # Pas de décomposition de la tombe
+  tomb_persists = true
+
+[death]
+  # Teleport direct à la tombe via /back (via FTB Essentials)
+  # La tombe affiche un waypoint automatique via Xaero's Minimap
+  spawn_grave = true
+  # Aucun item perdu au décès (dans la tombe)
+  keep_xp_percent = 50

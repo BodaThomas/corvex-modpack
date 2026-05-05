@@ -1,0 +1,19 @@
+# Simple Voice Chat — config serveur
+# Branche sur un port UDP à ouvrir sur ton security group AWS.
+
+port = 24454
+bind_address = "0.0.0.0"
+
+# Distance max de communication vocale (en blocs)
+voice_chat_distance = 48
+# Distance de fondu (plus loin = plus faible)
+voice_chat_fade_distance = 16
+
+# Autoriser les groupes privés (channels custom)
+allow_groups = true
+
+# Compression
+voice_chat_codec = "VOIP"
+
+# Optionnel : chat proximity activé en overworld, désactivé dans le nether pour fun
+# voice_chat_dimensions_whitelist = ["minecraft:overworld", "minecraft:the_end"]

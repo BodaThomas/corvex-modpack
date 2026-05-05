@@ -1,0 +1,20 @@
+# Packwiz cache local
+.packwizignore
+
+# Exports
+*.mrpack
+*.zip
+export/
+
+# Éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Backups
+*.bak
+
+# Logs
+*.log

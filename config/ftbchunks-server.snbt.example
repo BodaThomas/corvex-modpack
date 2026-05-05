@@ -1,0 +1,23 @@
+# FTB Chunks — config serveur
+# Claims adaptés pour 2-4 joueurs casual.
+# PvP désactivé dans les claims, mobs OK en dehors.
+
+[general]
+  # Nombre max de chunks claimables par joueur (1 chunk = 16x16 blocs)
+  # À 4 joueurs, 500 chunks chacun = large, pas de guerre d'espace
+  max_claimed_chunks = 500
+  # Nombre max de chunks force-loadés (restent chargés même sans joueur)
+  max_force_loaded_chunks = 25
+
+[defaults]
+  # Les joueurs ne peuvent pas se PvP dans les claims d'autrui
+  block_edit_mode = "allies"
+  block_interact_mode = "allies"
+  # Les mobs hostiles ne peuvent pas spawn/exploser dans les claims
+  block_attack_mode = "allies"
+  minecart_grief = false
+  explosions = false
+  mob_griefing = false
+  fake_players = "allies"
+  # Pas de feu qui se propage chez les potes
+  fire_spread = false
