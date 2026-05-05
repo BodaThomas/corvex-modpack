@@ -5,6 +5,14 @@ file = "README.md"
 hash = "e18fabc4f5e4c5a773db2d0b626994eeec946078c0bc295f0cd637476a7978c2"
 
 [[files]]
+file = "config/fancymenu/customization/title_screen_layout.txt"
+hash = "1d8b8affeed19498eb511826742c9a0903f8f18a7c24defb5ebcdcb4dfc72580"
+
+[[files]]
+file = "config/fancymenu/options.txt"
+hash = "1e55625ba95167e20d554501565f80d80aacee0d77ffd18ca90a1d417539682e"
+
+[[files]]
 file = "config/ftbchunks-server.snbt.example"
 hash = "1f4c601d986aeeaf26e17d8c0e7cc2026fa490ac42bbd0438a5e32bd06c288b9"
 
