@@ -86,6 +86,11 @@ hash = "7c3b1f4819e8a3b88cadd8ed968d74491c71f504738dd0f2cd60f3ff40d80f72"
 metafile = true
 
 [[files]]
+file = "mods/better-tablist.pw.toml"
+hash = "bc0183232616bcb94170d7baa16caa15632adb98088fb279c93d9349bcab995e"
+metafile = true
+
+[[files]]
 file = "mods/c2me-neoforge.pw.toml"
 hash = "4b060001a83142b94d6b60cf32bc015b0deb6090d5d962dac4650b3caed14f89"
 metafile = true
