@@ -49,6 +49,10 @@ file = "config/ftbquests/quests/data.snbt"
 hash = "a26ef989659aca34b562854b9f47ae91e825911cee047134519492bb95fd7ef1"
 
 [[files]]
+file = "config/tablist.toml"
+hash = "eb42b66d2e2647d1c321abd6912df52b11f6a75f0e402d0147de8c897d55dc9f"
+
+[[files]]
 file = "config/tombstone.toml.example"
 hash = "c0959e850352d43f251072da6878674e722a7bad4568486ac9f79eacbb9cd65d"
 
