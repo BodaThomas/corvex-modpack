@@ -3,13 +3,12 @@
 # start.sh — lancement du serveur Minecraft
 # ------------------------------------------------------------------
 # Flags JVM : Aikar's flags, optimisés pour serveurs Minecraft moddés.
-# Cible : t4g.medium (4 Go RAM) → alloue 3 Go à la JVM (marge pour l'OS).
-# Upgrade t4g.large (8 Go) → passer à 6 Go ci-dessous.
+# Cible : t4g.medium (4 Go RAM) → alloue 6 Go à la JVM (marge pour l'OS).
 # ------------------------------------------------------------------
 
 # Mémoire (ajuster selon instance)
-MIN_MEM="3G"
-MAX_MEM="3G"
+MIN_MEM="6G"
+MAX_MEM="6G"
 
 # Java 21 requis pour NeoForge 1.21.x
 JAVA_BIN="java"
