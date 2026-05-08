@@ -355,11 +355,6 @@ hash = "6bc414cc0f2d4c078fe83f384d786343f701f371d657c5279b5b0df1595804bd"
 metafile = true
 
 [[files]]
-file = "mods/my-nethers-delight.pw.toml"
-hash = "e9eaae2c64556b565ebb7db05200392697f2472058cfebd82db3635c3512d918"
-metafile = true
-
-[[files]]
 file = "mods/naturalist.pw.toml"
 hash = "bcd24eb0db2625488682ca538416a87a301543e5b68bff6633677a6780422db5"
 metafile = true
