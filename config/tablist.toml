@@ -3,9 +3,9 @@ server_name = "Corvex Friends"
 
 # Header animé (3 frames qui alternent toutes les ~2 secondes)
 header = [
-  "#N&#FFFFFF&l⛧ CORVEX FRIENDS ⛧#N&#888888Saison 1 — Le Réveil#N",
-  "#N&#FFFFFF&l✦ CORVEX FRIENDS ✦#N&#888888Saison 1 — Le Réveil#N",
-  "#N&#FFFFFF&l✧ CORVEX FRIENDS ✧#N&#888888Saison 1 — Le Réveil#N"
+  "#N&#FFFFFF&l⛧ CORVEX FRIENDS ⛧#N&#888888Saison 1 — Premier Pas#N",
+  "#N&#FFFFFF&l✦ CORVEX FRIENDS ✦#N&#888888Saison 1 — Premier Pas#N",
+  "#N&#FFFFFF&l✧ CORVEX FRIENDS ✧#N&#888888Saison 1 — Premier Pas#N"
 ]
 
 # Footer avec stats live
@@ -13,7 +13,7 @@ footer = [
   "#N&#888888Joueurs : &#FFFFFF#PLAYERCOUNT&#888888/&#FFFFFF#MAXPLAYERS &#666666| &#888888TPS : &#FFFFFF#TPS#N&#444444discord.gg/KKPFSrwte2#N"
 ]
 
-display_name_format = "{name}&#888888 #AFK"
+display_name_format = "{name}&#888888"
 update_interval = 500
 animation_interval = 40
 
