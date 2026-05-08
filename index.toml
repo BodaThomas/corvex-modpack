@@ -260,6 +260,11 @@ hash = "5707b722541648df013644f3b4d50083c77965d536f219df9fac5026f6103777"
 metafile = true
 
 [[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "27302b0087cf53570cd7a3b4eb550a208cbb6f6ba07210c604176155f39e0078"
+metafile = true
+
+[[files]]
 file = "mods/l_enders-cataclysm-delight.pw.toml"
 hash = "3e22ed38fd860e638308255d4a3f5eb24b3d22df1fabb9374ed6daa633abde79"
 metafile = true
