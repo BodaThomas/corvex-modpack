@@ -185,6 +185,11 @@ hash = "0670ca65c7208aa8211883fae30c935f53cad38196aac46723b10e7bbc695113"
 metafile = true
 
 [[files]]
+file = "mods/fancy-entity-renderer.pw.toml"
+hash = "f0d011745e2cad9df538f406b0d5ee0e64f618cb7246b562913823773ced0d2b"
+metafile = true
+
+[[files]]
 file = "mods/fancymenu.pw.toml"
 hash = "f373387ca84380c6e84b6608be135162f4b010741c287215f85d555d2917a699"
 metafile = true
@@ -441,12 +446,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "974c70cb83d75b39a3b0a49fc56db06423d7343b74f80c3cf5437951d743c8e8"
+hash = "2dea95045b782554e51b6d718e059f8736481814817ec760f0df25999e126747"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "f750250b94b5ae4bb453951c80aab690b3993c0547cf4496b591286694c5ad81"
+hash = "9b18b4fc1350b8a90768034abf77fa31a46ef9f61c4a0d8c9543cbc72f018768"
 metafile = true
 
 [[files]]
