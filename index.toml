@@ -50,7 +50,7 @@ hash = "a26ef989659aca34b562854b9f47ae91e825911cee047134519492bb95fd7ef1"
 
 [[files]]
 file = "config/tablist.toml"
-hash = "eb42b66d2e2647d1c321abd6912df52b11f6a75f0e402d0147de8c897d55dc9f"
+hash = "d3abf04c789144a2580e1c50e876ed7d57d5e80465c0f6e5fdd319afa60b49e8"
 
 [[files]]
 file = "config/tombstone.toml.example"
@@ -406,7 +406,7 @@ metafile = true
 
 [[files]]
 file = "mods/sound-physics-remastered.pw.toml"
-hash = "258a77de0a6db4c9ab045cbb240bcf4eac0dbbca3f6bc981fb461e55c247f23f"
+hash = "09c393b303130cefffc1c376ddfdeb869b20db31d3d42d9fa155e13cfc628645"
 metafile = true
 
 [[files]]
